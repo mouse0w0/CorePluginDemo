@@ -1,4 +1,4 @@
-package com.github.mouse0w0.coreplugindemon;
+package com.github.mouse0w0.coreplugindemo;
 
 import spigotlauncher.api.CorePlugin;
 import spigotlauncher.api.Transformer;

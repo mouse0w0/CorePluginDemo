@@ -1,4 +1,4 @@
-package com.github.mouse0w0.coreplugindemon;
+package com.github.mouse0w0.coreplugindemo;
 
 import org.objectweb.asm.ClassReader;
 import org.objectweb.asm.ClassWriter;

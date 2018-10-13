@@ -16,7 +16,7 @@
         <maven.compiler.source>1.7</maven.compiler.source>
         <maven.compiler.target>1.7</maven.compiler.target>
         <maven.compiler.compilerVersion>1.7</maven.compiler.compilerVersion>
-        <coreplugin.main>com.github.mouse0w0.coreplugindemon.DemoCorePlugin</coreplugin.main>
+        <coreplugin.main>com.github.mouse0w0.coreplugindemo.DemoCorePlugin</coreplugin.main>
     </properties>
 
     <repositories>
