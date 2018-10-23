@@ -3,7 +3,9 @@ package com.github.mouse0w0.coreplugindemo;
 import org.objectweb.asm.ClassReader;
 import org.objectweb.asm.ClassWriter;
 import org.objectweb.asm.tree.*;
-import spigotlauncher.api.Transformer;
+import spigotlauncher.api.plugin.Transformer;
+
+import java.util.List;
 
 import static org.objectweb.asm.Opcodes.*;
 
@@ -14,7 +16,7 @@ public class HelloWorldTransformer implements Transformer {
             ClassReader cr = new ClassReader(bytes);
             ClassNode cn = new ClassNode();
             cr.accept(cn, 0);
-            for(MethodNode mn : cn.methods) {
+            for(MethodNode mn : (List<MethodNode>)cn.methods) {
                 if(mn.name.equals("main")) {
                     mn.instructions.insert(new MethodInsnNode(INVOKEVIRTUAL, "java/io/PrintStream", "println", "(Ljava/lang/String;)V", false));
                     mn.instructions.insert(new LdcInsnNode("Hello World!"));
