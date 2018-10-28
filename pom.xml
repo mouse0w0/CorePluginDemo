@@ -28,8 +28,8 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.github.Mouse0w0</groupId>
-            <artifactId>SpigotLauncher</artifactId>
+            <groupId>com.github.Mouse0w0.SpigotLauncher</groupId>
+            <artifactId>spigotlauncher-api</artifactId>
             <version>0.2.0-beta</version>
         </dependency>
     </dependencies>
